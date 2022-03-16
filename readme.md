@@ -1,0 +1,1 @@
+This is simple stopwatch app with history of laps :)

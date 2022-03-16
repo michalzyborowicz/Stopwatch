@@ -1,0 +1,212 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #333;
+}
+
+.wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px;
+  width: 800px;
+  background-image: radial-gradient(circle, #2b2c2e 0%, #191919 93%);
+  border-radius: 8px;
+  -webkit-box-shadow: 5px 5px 10px black;
+          box-shadow: 5px 5px 10px black;
+  color: #fff;
+}
+
+.wrapper .info {
+  position: absolute;
+  top: 6px;
+  right: 14px;
+  padding: 20px;
+  font-size: 24px;
+  color: #d2c7de;
+  cursor: pointer;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.wrapper .info:hover {
+  color: #fa1406;
+}
+
+.wrapper h1 {
+  margin-bottom: 20px;
+  font-size: 60px;
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+
+.wrapper .stopwatch {
+  font-size: 72px;
+  color: #fa1406;
+}
+
+.wrapper .time {
+  visibility: hidden;
+  color: #d2c7de;
+  font-size: 22px;
+}
+
+.wrapper .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 30px;
+}
+
+.wrapper .buttons button {
+  margin: 10px;
+  padding: 10px 20px;
+  width: 20%;
+  color: #fff;
+  font-size: 22px;
+  background-color: transparent;
+  border: 1px solid #fa1406;
+  cursor: pointer;
+  border-radius: 5px;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.wrapper .buttons button:hover,
+.wrapper .buttons button:focus {
+  background-color: #fa1406;
+  outline: none;
+}
+
+.wrapper .buttons .history {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-transform: uppercase;
+}
+
+.wrapper .time-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 300px;
+  font-size: 22px;
+  color: #d2c7de;
+}
+
+.wrapper .time-list span {
+  font-weight: bold;
+}
+
+.modal-shadow {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.modal-shadow .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 600px;
+  height: 360px;
+  padding: 30px 60px;
+  border-radius: 15px;
+  background-color: whitesmoke;
+}
+
+.modal-shadow .modal h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.modal-shadow .modal p {
+  margin-bottom: 10px;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+.modal-shadow .modal .close {
+  display: block;
+  margin: 40px auto 0;
+  padding: 10px 20px;
+  width: 200px;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  border: 1px solid #fa1406;
+  border-radius: 5px;
+  background-color: #fa1406;
+  -webkit-transition: background-color 0.3s;
+  transition: background-color 0.3s;
+}
+
+.modal-shadow .modal .close:hover {
+  background-color: #e2241a;
+}
+
+.modal-animation {
+  -webkit-animation: show-modal 0.5s;
+          animation: show-modal 0.5s;
+}
+
+@-webkit-keyframes show-modal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes show-modal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=main_style.css.map */
